@@ -1,0 +1,124 @@
+/* Global CSS - Alchemist.UI Design System */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700&family=Space+Grotesk:wght@300;500;700&display=swap');
+
+:root {
+    --bg-color: #0b0e14;
+    --surface-color: #10131a;
+    --surface-container: #1d2026;
+    --surface-variant: #32353c;
+    --primary: #ffb1c4;
+    --secondary: #dfb7ff;
+    --tertiary: #00dbe9;
+    --on-surface: #e1e2eb;
+    --on-surface-variant: #e5bcc5;
+    --primary-gradient: linear-gradient(to right, #FF007F, #9D00FF);
+    --glass-bg: rgba(50, 53, 60, 0.4);
+    --glass-border: rgba(92, 63, 70, 0.24);
+}
+
+@font-face {
+    font-family: 'Clash_Display';
+    src: url('https://fonts.cdnfonts.com/s/70104/ClashDisplay-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--on-surface);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.clash-display {
+    font-family: 'Clash_Display', 'Space Grotesk', sans-serif;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.liquid-blob {
+    filter: blur(150px);
+    opacity: 0.6;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 9999px;
+}
+
+.btn-primary {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.875rem;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 127, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--on-surface);
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: 1px solid var(--glass-border);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.875rem;
+}
+
+.btn-secondary:hover {
+    background: var(--surface-variant);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.float-anim {
+    animation: float 6s ease-in-out infinite;
+}

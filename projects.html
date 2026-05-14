@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyectos | Luisa Dev Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <style>
+      @font-face {
+        font-family: "Clash_Display";
+        src: url("https://fonts.cdnfonts.com/s/70104/ClashDisplay-Bold.woff")
+          format("woff");
+        font-weight: 700;
+      }
+      body {
+        font-family: "Manrope", sans-serif;
+        background-color: #0b0e14;
+      }
+      .clash-display {
+        font-family: "Clash_Display", "Space Grotesk", sans-serif;
+      }
+      .glass-card {
+        background: rgba(50, 53, 60, 0.4);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(92, 63, 70, 0.2);
+      }
+    </style>
+    <script src="components/Header.js" defer></script>
+    <script src="components/Footer.js" defer></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ffb1c4",
+              secondary: "#dfb7ff",
+              tertiary: "#00dbe9",
+              surface: "#10131a",
+              "on-surface": "#e1e2eb",
+              "on-surface-variant": "#e5bcc5",
+              "surface-container-high": "#272a31",
+              "surface-container-lowest": "#0b0e14",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[#0b0e14] text-[#e1e2eb]">
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+      <div
+        class="liquid-blob absolute top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-[#ff4a8d]/20 blur-[80px]"
+      ></div>
+      <div
+        class="liquid-blob absolute bottom-[-5%] right-[5%] w-[600px] h-[600px] rounded-full bg-[#9d05ff]/20 blur-[80px]"
+      ></div>
+      <div
+        class="liquid-blob absolute top-[20%] right-[-10%] w-[400px] h-[400px] rounded-full bg-[#00a0aa]/10 blur-[80px]"
+      ></div>
+    </div>
+
+    <portfolio-header></portfolio-header>
+
+    <main class="pt-32">
+      <div class="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+        <!-- Hero Headline -->
+        <header class="mb-24 relative">
+          <div
+            class="absolute -left-12 -top-12 text-[12rem] font-black text-white/5 clash-display select-none pointer-events-none"
+          >
+            WORKS
+          </div>
+          <h1
+            class="clash-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-on-surface leading-[0.9]"
+          >
+            CREACIONES <br />
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+              >DESTACADAS</span
+            >
+          </h1>
+          <p
+            class="mt-8 max-w-xl text-lg text-on-surface-variant font-light leading-relaxed"
+          >
+            Combinando precisión técnica con diseño web innovador y moderno.
+          </p>
+        </header>
+        <!-- Project Grid (Bento Style) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <!-- Project 1: Large Featured -->
+          <div
+            class="md:col-span-8 group relative rounded-xl overflow-hidden glass-card p-1"
+          >
+            <div
+              class="h-[500px] relative rounded-xl overflow-hidden bg-surface-container-low"
+            >
+            <a href="rick-project.html">             
+                <img
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60"
+                src="assets/img/rick.png"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"
+              ></div>
+              <div class="absolute bottom-12 left-12 right-12">
+                <div class="flex gap-3 mb-4">
+                  <span
+                    class="px-3 py-1 bg-primary/20 text-primary text-[10px] font-bold tracking-widest rounded-sm font-label uppercase"
+                    >REACT</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-tertiary/20 text-tertiary text-[10px] font-bold tracking-widest rounded-sm font-label uppercase"
+                    >TS</span
+                  >
+                </div>
+                <h3 class="clash-display text-4xl font-bold text-white mb-2">
+                  RICK AND MORTY JUEGO
+                </h3>
+                <p class="text-on-surface-variant max-w-md font-body">
+                  un juego divertido de memoria donde puedes explorar el
+                  multiverso y divertirte con tus amigos.
+                </p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <!-- Project 2: Vertical Small -->
+          <div
+            class="md:col-span-4 group relative rounded-xl overflow-hidden glass-card p-1"
+          >
+            <div
+              class="h-full relative rounded-xl overflow-hidden bg-surface-container-low flex flex-col"
+            >
+              <div class="h-1/2 overflow-hidden">
+                  <a href="portfolio-project.html">   
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-50"
+                  src="assets/img/project2.png"
+                />
+                </a>
+              </div>
+              <div class="p-8 flex flex-col justify-end flex-grow">
+                <div class="flex gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 bg-secondary/20 text-secondary text-[10px] font-bold tracking-widest rounded-sm font-label uppercase"
+                    >ASTRO</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-secondary/20 text-secondary text-[10px] font-bold tracking-widest rounded-sm font-label uppercase"
+                    >TAILWIND</span
+                  >
+                </div>
+                <h3 class="clash-display text-2xl font-bold text-white mb-2">
+                  PORTFOLIO V1.1
+                </h3>
+                <p class="text-sm text-on-surface-variant font-body">
+                  Ejercicio de mi primer portfolio, creado con Astro y Tailwind
+                  CSS.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3: Medium -->
+          <!-- <div
+            class="md:col-span-6 group relative rounded-xl overflow-hidden glass-card p-1"
+          >
+            <div
+              class="h-[400px] relative rounded-xl overflow-hidden bg-surface-container-low"
+            >
+              <img
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-50"
+                src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=1000"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
+              >
+                <button
+                  class="bg-white text-black px-6 py-2 rounded-full font-bold clash-display text-sm tracking-widest hover:scale-105 transition-transform"
+                >
+                  VER PROYECTO
+                </button>
+              </div>
+              <div class="absolute bottom-8 left-8">
+                <div class="flex gap-2 mb-3">
+                  <span
+                    class="px-3 py-1 bg-primary/20 text-primary text-[10px] font-bold tracking-widest rounded-sm font-label uppercase"
+                    >TYPESCRIPT</span
+                  >
+                </div>
+                <h3 class="clash-display text-2xl font-bold text-white mb-1">
+                  CYBER_MORPH
+                </h3>
+                <p class="text-sm text-on-surface-variant font-body">
+                  Biblioteca de componentes UI con transiciones orgánicas.
+                </p>
+              </div>
+            </div>
+          </div> -->
+          <!-- Project 4: Medium -->
+          <!-- <div
+            class="md:col-span-6 group relative rounded-xl overflow-hidden glass-card p-1"
+          >
+            <div
+              class="h-[400px] relative rounded-xl overflow-hidden bg-surface-container-low"
+            >
+              <img
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-50"
+                src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=1000"
+              />
+              <div class="absolute bottom-8 left-8">
+                <div class="flex gap-2 mb-3">
+                  <span
+                    class="px-3 py-1 bg-tertiary/20 text-tertiary text-[10px] font-bold tracking-widest rounded-sm font-label uppercase"
+                    >GSAP</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-primary/20 text-primary text-[10px] font-bold tracking-widest rounded-sm font-label uppercase"
+                    >SVG</span
+                  >
+                </div>
+                <h3 class="clash-display text-2xl font-bold text-white mb-1">
+                  ALGO_RHYTHM
+                </h3>
+                <p class="text-sm text-on-surface-variant font-body">
+                  Visualización de algoritmos mediante animaciones líquidas.
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <!-- Call to Action Section -->
+        <section
+          class="mt-48 mb-24 text-center glass-card py-24 px-8 rounded-xl border-none"
+        >
+          <h2 class="clash-display text-4xl md:text-6xl font-bold mb-8">
+            ¿TIENES UNA VISIÓN?
+          </h2>
+          <p class="max-w-xl mx-auto text-on-surface-variant text-lg mb-12">
+            Destilemos tus conceptos en experiencias digitales inmersivas.
+          </p>
+          <a
+            class="inline-flex items-center gap-4 group"
+            href="mailto:lugiraldo8610@gmail.com"
+          >
+            <span
+              class="text-2xl md:text-4xl font-bold text-primary clash-display border-b-2 border-primary pb-2 group-hover:text-white group-hover:border-white transition-all"
+              >INICIAR PROYECTO</span
+            >
+            <span
+              class="material-symbols-outlined text-4xl text-primary group-hover:translate-x-2 transition-transform"
+              >arrow_forward</span
+            >
+          </a>
+        </section>
+      </div>
+    </main>
+
+    <portfolio-footer></portfolio-footer>
+  </body>
+</html>

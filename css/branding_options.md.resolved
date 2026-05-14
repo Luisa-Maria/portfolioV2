@@ -1,0 +1,65 @@
+# Propuesta de Branding: Portafolio Frontend Moderno
+
+Aquí tienes 5 conceptos de branding diseñados para resaltar tu trabajo como desarrolladora frontend. Todos siguen la línea de **fondos oscuros, acentos fluorescentes, minimalismo divertido y alto impacto visual.**
+
+---
+
+## 1. Electric Noir (Cyber-Clean)
+*Una estética de alto contraste inspirada en interfaces tecnológicas avanzadas y el movimiento "cyberpunk" pero simplificado.*
+
+*   **Paleta de Colores:**
+    *   **Fondo:** `#0A0A0A` (Negro profundo)
+    *   **Acento:** `#CCFF00` (Verde Lima Eléctrico)
+    *   **Secundario:** `#1A1A1A` (Gris Carbón para tarjetas)
+*   **Tipografía:** *Geist* o *Inter* (Sans-serif geométrica y ultra-limpia).
+*   **Estilo Visual:** Bordes finos de 1px, efectos de resplandor (glow) sutiles en botones y separadores.
+*   **Animación Clave:** Efecto de "escaneo" al cargar la página y botones con interacción magnética que siguen el cursor.
+
+## 2. Liquid Nebula (Organic Flow)
+*Un diseño fluido y artístico que utiliza gradientes dinámicos y formas orgánicas para una sensación premium y creativa.*
+
+*   **Paleta de Colores:**
+    *   **Fondo:** `#0B0E14` (Azul Noche Profundo)
+    *   **Acento:** `#FF007F` (Rosa Neón)
+    *   **Gradiente:** Transición de `#FF007F` a `#9D00FF` (Púrpura Eléctrico).
+*   **Tipografía:** *Clash Display* (Moderna, con mucha personalidad en los pesos gruesos).
+*   **Estilo Visual:** "Glassmorphism" (vidrio esmerilado) en tarjetas y blobs orgánicos moviéndose suavemente de fondo.
+*   **Animación Clave:** Distorsión líquida (liquid shader) al pasar el cursor sobre las imágenes de tus proyectos.
+
+## 3. Bento Spark (Interactive Grid)
+*Basado en la tendencia de "Bento Boxes" (cuadrículas organizadas), ideal para mostrar habilidades y proyectos de forma modular.*
+
+*   **Paleta de Colores:**
+    *   **Fondo:** `#121212` (Gris Oscuro Mate)
+    *   **Acento:** `#00F5FF` (Cian Fluorescente)
+    *   **Detalle:** `#2D2D2D` (Gris para bordes de celdas).
+*   **Tipografía:** *Space Grotesk* (Toque tecnológico y futurista).
+*   **Estilo Visual:** Celdas redondeadas con sombras internas y bordes que se iluminan al hacer hover.
+*   **Animación Clave:** Efecto 3D "tilt" (inclinación) en cada celda de la cuadrícula cuando el usuario mueve el ratón.
+
+## 4. Glass Techno (Layered Depth)
+*Un enfoque en la profundidad y las capas, usando transparencias para dar una sensación de software de alta gama.*
+
+*   **Paleta de Colores:**
+    *   **Fondo:** `#050505` (Negro Puro)
+    *   **Acento:** `#FF4D00` (Naranja Fluorescente / Lava)
+    *   **Capa:** `#FFFFFF10` (Blanco con 10% de opacidad para paneles).
+*   **Tipografía:** *General Sans* para cuerpo y *IBM Plex Mono* para detalles técnicos.
+*   **Estilo Visual:** Paneles flotantes con desenfoque de fondo (backdrop-blur) muy fuerte y luces de "neón" que emanan de las esquinas.
+*   **Animación Clave:** Parallax suave en los paneles y una estela de luz que sigue el movimiento del scroll.
+
+## 5. Vivid Minimal (Typography First)
+*Minimalismo extremo donde el tamaño de la letra y el color fluorescente son los protagonistas absolutos.*
+
+*   **Paleta de Colores:**
+    *   **Fondo:** `#111111` (Gris casi negro)
+    *   **Acento:** `#EBFF00` (Amarillo Neón)
+    *   **Texto:** `#FFFFFF` (Blanco puro para legibilidad).
+*   **Tipografía:** *Syne* (Fuentes muy anchas y audaces para títulos) + *Mona Sans*.
+*   **Estilo Visual:** Espacios en blanco (negro en este caso) muy generosos, sin bordes, solo tipografía gigante y puntos de color intenso.
+*   **Animación Clave:** "Kinetic Typography" (texto que se mueve o cambia de escala al hacer scroll) y revelaciones de texto con máquinas suaves.
+
+---
+
+### ¿Cuál de estas opciones te resuena más?
+Una vez elijas una, podemos empezar con el **Moodboard visual** y la **estructura de archivos** en tu proyecto.

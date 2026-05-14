@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-antigravity",
+  "version": "1.0.0",
+  "description": "Premium Soft Minimalism Portfolio",
+  "main": "build.js",
+  "scripts": {
+    "dev": "npx -y serve ."
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

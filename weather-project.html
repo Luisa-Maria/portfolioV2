@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle | Luisa Dev Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <style>
+      @font-face {
+        font-family: "Clash_Display";
+        src: url("https://fonts.cdnfonts.com/s/70104/ClashDisplay-Bold.woff")
+          format("woff");
+        font-weight: 700;
+      }
+      body {
+        font-family: "Manrope", sans-serif;
+        background-color: #0b0e14;
+      }
+      .clash-display {
+        font-family: "Clash_Display", "Space Grotesk", sans-serif;
+      }
+      .glass-card {
+        background: rgba(50, 53, 60, 0.4);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(92, 63, 70, 0.2);
+      }
+    </style>
+    <script src="components/Header.js" defer></script>
+    <script src="components/Footer.js" defer></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ffb1c4",
+              secondary: "#dfb7ff",
+              tertiary: "#00dbe9",
+              surface: "#10131a",
+              "on-surface": "#e1e2eb",
+              "on-surface-variant": "#e5bcc5",
+              "surface-container-high": "#272a31",
+              "surface-container-lowest": "#0b0e14",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-[#0b0e14] text-[#e1e2eb]">
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+      <div
+        class="liquid-blob absolute top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-[#ff4a8d]/20 blur-[80px]"
+      ></div>
+      <div
+        class="liquid-blob absolute bottom-[-5%] right-[5%] w-[600px] h-[600px] rounded-full bg-[#9d05ff]/20 blur-[80px]"
+      ></div>
+      <div
+        class="liquid-blob absolute top-[20%] right-[-10%] w-[400px] h-[400px] rounded-full bg-[#00a0aa]/10 blur-[80px]"
+      ></div>
+    </div>
+
+    <portfolio-header></portfolio-header>
+
+    <main class="pt-32">
+      <article class="max-w-5xl mx-auto px-8 pb-24">
+        <!-- Project Header -->
+        <header class="mb-16">
+          <a
+            href="projects.html"
+            class="inline-flex items-center gap-2 text-primary hover:text-white transition-colors mb-12"
+          >
+            <span>←</span> VOLVER A PROYECTOS
+          </a>
+          <h1
+            class="text-6xl md:text-8xl font-black tracking-tighter text-on-surface mb-6 clash-display"
+          >
+            CLIMA REAL
+          </h1>
+          <div class="flex flex-wrap gap-4 mb-12">
+            <span
+              class="px-4 py-1 border border-primary/30 rounded-full text-xs font-bold tracking-widest text-primary"
+              >REACT</span
+            >
+            <span
+              class="px-4 py-1 border border-secondary/30 rounded-full text-xs font-bold tracking-widest text-secondary"
+              >TAILWIND CSS</span
+            >
+            <span
+              class="px-4 py-1 border border-tertiary/30 rounded-full text-xs font-bold tracking-widest text-tertiary"
+              >OPENWEATHER API</span
+            >
+          </div>
+          <div
+            class="glass-card overflow-hidden rounded-2xl mb-16 aspect-video"
+          >
+            <img
+              class="w-full object-cover"
+              src="assets/img/weather2.png"
+              alt="Project Hero"
+            />
+          </div>
+        </header>
+
+        <!-- Project Info Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mb-24">
+          <div class="md:col-span-2">
+            <h2 class="text-3xl font-bold text-white mb-6 clash-display">
+              Visión General
+            </h2>
+            <p class="text-xl text-on-surface-variant leading-relaxed mb-8">
+              La aplicacion de clima real es una experiencia que permite a los
+              usuarios consultar el clima de diferentes ciudades. les permite
+              observar imagenes y descripciones del clima en tiempo real ademas
+              de poder observar un pronostico del tiempo de los proximos 5 dias.
+            </p>
+            <p class="text-lg text-on-surface-variant leading-relaxed">
+              Este proyecto me permitió explorar el uso de APIs externas como
+              las de openweather(Data sobre el clima y el pronostico) y
+              Unsplash(imagenes de fondo), y cómo integrar información del mundo
+              real en una aplicación web.
+            </p>
+            <p class="text-lg text-on-surface-variant leading-relaxed">
+              Además, pude practicar el diseño de interfaces responsive y la
+              implementación de estilos modernos con Tailwind CSS, logrando un
+              resultado limpio y funcional.
+            </p>
+          </div>
+          <div class="space-y-12">
+            <div>
+              <h3
+                class="text-xs font-bold tracking-widest text-primary uppercase mb-4"
+              >
+                Rol
+              </h3>
+              <p class="text-lg text-white">Desarrolladora Frontend</p>
+            </div>
+            <div>
+              <h3
+                class="text-xs font-bold tracking-widest text-primary uppercase mb-4"
+              >
+                Fecha
+              </h3>
+              <p class="text-lg text-white">2026</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Details Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+          <div class="glass-card p-6 md:p-12">
+            <h3 class="text-2xl font-bold text-white mb-6 clash-display">
+              El Desafío
+            </h3>
+            <p class="text-on-surface-variant leading-relaxed">
+              El desafio principal era poder manejar informacion dinamica en
+              tiempo real, por lo tanto ,debía investigar y aprender sobre las
+              apis que me podrian servir para obtener la informacion necesaria
+              para el funcionamiento de la aplicacion y de esta manera poder
+              aplicar estos conocimientos en el desarrollo de la misma. Asi
+              mismo hacer que la aplicacion se sintiera dinamica y agradable
+              para el usuario , implementar un buen diseño, fluido, moderno y
+              que fuera acorde al proyecto.
+            </p>
+          </div>
+          <div class="glass-card p-6 md:p-12">
+            <h3 class="text-2xl font-bold text-white mb-6 clash-display">
+              La Solución
+            </h3>
+            <p class="text-on-surface-variant leading-relaxed">
+              La solución fue investigar y aprender sobre las apis que me
+              podrian servir para obtener la informacion necesaria para el
+              funcionamiento de la aplicacion y que fuera data confiable.
+            </p>
+          </div>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="text-center py-24 border-t border-white/5">
+          <h2 class="text-4xl font-bold text-white mb-8 clash-display">
+            ¿QUIERES VER MÁS?
+          </h2>
+
+          <div class="flex justify-center gap-6">
+            <a
+              href="https://github.com/Luisa-Maria/weather"
+              class="btn-secondary"
+              >REPOSITORIO GITHUB</a
+            >
+            <a href="https://consultweather.netlify.app/" class="btn-primary"
+              >DEMO EN VIVO</a
+            >
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <portfolio-footer></portfolio-footer>
+  </body>
+</html>
